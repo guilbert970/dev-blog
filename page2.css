@@ -59,17 +59,16 @@ h3, .visible, .visible > a {
 }
 /*classes pour cacher / réveler les textes*/
 .hide {
-    opacity: 0;
-    transition: .5s;
+    visibility: hidden;
 }
 .show {
     transition: .6s;
-    transition-delay: 0.3s;
     position: absolute;
     opacity: 1;
     height: auto;
     background: url('img/scrollbg.jpg') center;
     color: #000;
+    visibility: visible;
 }
 p {
     font-size: 12px;
@@ -141,9 +140,7 @@ span {
     header {
         height: 100px;
         background-color: #111;
-    }
-    
-    
+    }  
     .logo-pic {
         width: 100px;
         height: 100px;
@@ -156,6 +153,10 @@ span {
         display: block;
         width: 400px;
         max-height: 100%;
+    }
+    .owl {
+        width: 100px;
+        height:100px;
     }
     .content {
         display: flex;
@@ -187,6 +188,7 @@ span {
         color: #555;
         letter-spacing: 0.3em;
         max-width: 70%;
+        visibility: visible;
     }
     .button, .close {
         opacity: 0 !important;
