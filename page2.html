@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 2</title> <!--à modif-->
+    <title>Les bons outils</title> <!--à modif-->
     <link rel="stylesheet" type="text/css" href="page2.css"> 
     <script type="text/javaScript" src="page2.js" defer></script>
 </head>
@@ -15,32 +15,34 @@
     </header>
 
     <div class="wrapper">
-        <p class="visible">You have made the right choice, so now let's get started! Follow the <a target="_blank" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3">tutorial</a> to learn the basics, after that ...</p>
-        <h3>1) Select your weapon!</h3>
-            <p class="visible">The developer's weapon is his code editor, chose wisely...</p>
+        
+        <p class="visible">Maintenant que tu as passé la porte, il est temps de commencer ! Suis ce  <a target="_blank" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3">tutoriel</a> pour apprendre les bases, ensuite ...</p>
+        <img class="owl" src="img/owl.png" alt="owl">
+        <h3>1) Sélectionne ton arme !</h3>
+            <p class="visible">L'arme du développeur, c'est son éditeur de code, choisis bien...</p>
             <div class="content content1">
                     <img class="pic-desk-only" src="img/Weapons.png" alt="weapon-rack">
                     
                     <div class="hide hide1">
                         <div class="weapon">
                             <img class="weaponchoice" src="img/sublimetext.png" alt="vscode">
-                            <p>Sublime Text : SPEED +1 ,AGI +1, INT +1 </p>
+                            <p>Sublime Text : VIT +1 ,AGI +1, INT +1 </p>
                         </div>
                         <div class="weapon">
                             <img class="weaponchoice" src="img/atom.png" alt="atom">
-                            <p>Atom : SPEED +2, INT+2 </p>
+                            <p>Atom : VIT +2, INT+2 </p>
                         </div>
                         <div class="weapon">
                             <img class="weaponchoice" src="img/vscode.png" alt="vscode">
-                            <p>Visual studio Code : SPEED +3, AGI +3, INT+3 </p>
+                            <p>Visual studio Code : VIT +3, AGI +3, INT+3 </p>
                         </div>
-                        <p><em>(These values mean nothing, there are many <a target="_blank" href="https://geekflare.com/fr/code-text-editors/">code editors</a>, try for yourself and find the one you are the most comfortable with.)</em></br></br>
-                        Found your weapon? Fine, time to practice!</br><button class="close close1">Fermer</button></p>
+                        <p><em>(Ces valeurs sont là pour décorer, il existe beaucoup d' <a target="_blank" href="https://geekflare.com/fr/code-text-editors/">éditeurs de code</a>, utilise celui avec lequel tu es le plus à l'aise.)</em></br></br>
+                        Tu as trouvé ? Parfait , Au travail !</br><button class="close close1">Fermer</button></p>
                     </div>
                     <button class="button button1" type="button" onClick="show(1)">Inspecter</button>
             </div>
             <h3>2) Take on your first tasks!</h3>
-                <p class="visible">Now you're ready for your first errands. Open your quest log !</p>
+                <p class="visible">Tu es prêt pour tes premières tâches, ouvre ton journal des quêtes !</p>
             <div class="content content2"> 
                     <img class="pic-desk-only" src="img/Questlog.jpg" alt="quest-log">
                 
@@ -48,24 +50,30 @@
                     <div class='hide hide2'>
                         <div class="task">
                             <a target="_blank" href="https://flexboxfroggy.com/#fr"><img class="task1" src="img/flex-frog.png" alt="flex-frog"></a>
-                            <p><span>Quest level 1(easy) :</span> Help the frogs!</p>
+                            <p><span>Quête niveau 1(facile) :</span> Aide les grenouilles !</p>
                         </div>
                         <div class="task">
                             <a target="_blank" href="https://cssgridgarden.com/#fr"><img class="task2" src="img/grid-garden.png" alt="grid-garden" ></a>
-                            <p><span>Quest level 2(normal) :</span> Take care of this garden !</p>
+                            <p><span>Quête niveau 2(normal) :</span> Entretiens ce jardin !</p>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid quisquam nesciunt officia iste repudiandae dicta tempora ipsam maiores quas. Aliquid quod magni voluptates sit modi voluptate, ea labore delectus.</br><button class="close close2">Fermer</button></p>
+                        <p>Grâce à ces travaux tu vas gagner en expérience et étoffer tes talents ! Mais ce n'est qu'un début...</br><button class="close close2">Fermer</button></p>
                     </div>
                     <button class="button button2" type="button" onClick="show(2)">Open</button>
             </div>
-            <h3>3) Do MORE tasks!!</h3>
-                <p class="visible">Now you have to gain experience and sharpen your skills. Lots of possibilities open before you !</p>
+            <h3>3) Fais-en ENCORE PLUS !!</h3>
+                <p class="visible">La route sera longue mais tu ne dois pas te décourager !</p>
             <div class="content content3">
                 <img class="pic-desk-only" src="img/levelup.png" alt="level-up">
 
                     <div class="hide hide3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nobis quae provident similique, quaerat sequi aperiam quia dignissimos porro voluptatibus possimus, laborum facere molestias velit excepturi veritatis. Explicabo, vel quasi!</br><button class="close close3">Fermer</button></p>
-
+                        <p>Un point important à savoir est que <strong>l'auto-formation</strong> va jouer un rôle essentiel dans ton parcours. Tu vas vouloir progresser en algorithmie et pratiquer énormément pour te perfectionner ! Voici des zones de progression utiles :
+                        </br></br>
+                            </br><a target="_blank" href="https://www.codingame.com/training/easy/onboarding">-Expédition algorithmie</a>
+                        </br></br>
+                            </br><a target="_blank" href="https://www.codewars.com/">-Expédition Katas</a>
+                        </br></br>
+                            </br><a target="_blank" href="https://blockly.games/?lang=fr">-Expédition Puzzles</a></br><button class="close close3">Fermer</button></p>
+                        
                     </div>
                     <button class="button button3" type="button" onClick="show(3)">Let's go !</button>
                     

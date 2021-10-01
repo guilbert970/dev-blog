@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: #f0ead3;
+    background: url('img/woodtable.jpg');
 }
 header {
     display: flex;
@@ -19,19 +19,29 @@ header {
     left: 10px;
     position: absolute;
 }
-.banner {
+/*ici les éléments masqués en format mobile*/
+.banner, .pic-desk-only {
     display: none;
 }
+.owl {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 20px auto;
+    
+}
 h2 {
+    font-size: 20px;
     color: #fff
 }
 h3 {
     text-decoration: underline;
 }
-.visible {
-    font-size: 16px;
+h3, .visible, .visible > a {
+    color: #f0ead3;
 }
-
+.visible {
+    font-size: 18px;
+}
 .wrapper { 
     display: flex;
     flex-direction: column;
@@ -107,9 +117,7 @@ p {
     height: 400px;
     max-width: 100%;
 }
-.pic-desk-only {
-    display: none;
-}
+
 .weapon, .task {
     display:flex;
     justify-content: center;
@@ -128,14 +136,13 @@ p {
 span {
     text-decoration: underline;
 }
+/*début CSS pour desktop*/
 @media screen and (min-width: 600px) {
     header {
         height: 100px;
         background-color: #111;
     }
-    body {
-        background-color: lightsalmon;
-    }
+    
     
     .logo-pic {
         width: 100px;
@@ -168,15 +175,17 @@ span {
         margin:0 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     }
+    
     p {
         font-size: 18px;
+        word-spacing: 0.3em;
     }
     
     .hide {
         opacity: 1;
         padding: 20px;
         color: #555;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.3em;
         max-width: 70%;
     }
     .button, .close {
