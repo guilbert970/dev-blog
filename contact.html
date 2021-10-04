@@ -9,20 +9,64 @@
     <script type="text/javascript" src="contact.js" defer></script>
 </head>
 <body>
-    <h2>Recherche de groupe !</h2>
-    <div class="coworkers-container">
-        <div class="coworker1"></div>
-        <div class="coworker2"></div>
-        <div class="coworker3"></div>
-    </div>
-    <form action="get">
-        <label for="name">Name :</label>
-        <input type="text" id="name" name="name">
-        <label for="email">email :</label>
-        <input type="email" id="email" name="email">
-        <label for="textarea">Message :</label>
-        <textarea name="textarea" id="textarea"></textarea>
-    </form>
+    <header>
+        <h2>Recherche de groupe !</h2>
+    </header>
+    <div class="main">
+        <div class="wrap-text">
+            <p>Après toutes ces épreuves, tu es décidé à poursuivre dans cette voie, tu as des questions? N'hésite pas à nous contacter !</p>
+        </div>
     
+        <form id="form">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Nom" required>
+            <label for="email">email :</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <label for="textarea">Message :</label>
+            <textarea name="textarea" id="textarea" placeholder="Message"></textarea>
+            
+            <input type="submit" id="submit" value="Envoyer !">
+            <div id="open-modal">
+                <div class="inner-modal">
+                    <div class="slider">
+                        <p>Merci beaucoup pour votre retour, nous espérons vous revoir bientôt sur devAttitude !!</p>
+                    </div>
+                    <button id="close" type="button">Fermer</button>
+                </div>
+            </div>
+        </form>
+        <div class="coworkers-container">
+            <h3>Membres du projet :</h3>
+            <div class="coworker">
+                <p>Tatiana</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Tatiana.jpg" alt="Collaborateur1">    
+            </div>
+            <div class="coworker">
+                <p>Xavier</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Xavier.jpg" alt="Collaborateur2">    
+            </div>
+            <div class="coworker">
+                <p>Greg</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Greg.jpg" alt="Collaborateur3">    
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Politique de confidentialité</p>
+        <p>FAQ</p>
+        <p>Mentions légales</p>
+    </footer>
 </body>
 </html>
