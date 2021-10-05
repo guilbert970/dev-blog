@@ -106,9 +106,10 @@ textarea {
     background: url('img/woodtable.jpg');
     animation: slidein 1s linear;
 }
+/*animation du texte*/
 @keyframes slidein {
     from {
-        margin-left:100%;
+        margin-left:200%;
     }
     to {
         margin-left: 0;
