@@ -1,157 +1,250 @@
-#container{
-    display: flex;
-    justify-content: space-around;
-    height: 200px;
-    margin-top: 20px;
-    position: relative;
+*{
+    margin: 0;
+    padding: 0;
 }
-#image{
-    width: 370px;
-    height: 230px;
-    border: 3px solid black;  
+.navmenu{
+    display:none;
 }
-body{
-    background: url(image/parch.jpg);
-    
-}
-#text{
-    width: 150px;
-    height: 40px;
-    vertical-align: middle;
-    text-align: center;
-    position: absolute;
-    padding-top: 30px; 
-    margin-right: 70px;   
-}
-#epee{
-    width: 20vh;
-    height: 15vh;
-    padding-top: 43px;
-    margin-left: 10%;
-}
-#image1{
-    width: 420px;
-    height: 250px;
-    border: 3px solid black; 
-}
-header{
-    display:flex;
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    
+  height: 200px;
+  margin-top: 50px;
+  position: relative;
 }
-
-/*#logo img{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+.wrap-epee-text {
+  display: flex;
+  width: 33%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-nav ul{
-list-style-type: none;
-display: flex;
+#image {
+  width: 33%;
+  height: 99%;
+  border: 3px solid black;
+  box-shadow: 8px 6px 4px 4px rgba(54, 1, 1, 0.205);
+  margin-left: 5px;
 }
-nav li{
-    display: flex;
-    justify-content: flex-end;
-    
-    margin-right: 10px;
-    
-    
-}
-nav a{
-    font-size: 1.1m;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #c00407;
-    border-bottom: 3px solid #c00407;
-}*/
-hr{
-    border: 3px solid black;
-    width: 99%;
-}
-footer{
-    display: flex;
-}
-#text1{
-    display: flex;
-    justify-items: flex-end;
-     width: 250px;
-    height: 20px;
-    text-align: justify;
-    margin-left: 40%; 
-}
-#epee1{
-    width: 10vh;
-    height: 12vh;
-    transform: rotate(90deg);
-    padding-top: 260px;
-    margin-right: 70px;
+p {
+  display: flex;
+  justify-items: center;
+  font-family: "Franklin Gothic Medium', cursive";
+  text-align: justify;
 
 }
-#image2{
-    width: 420px;
-    height: 220px;
-    margin-left: 31%;
-    padding-top: 1%;
-
+body {
+  background: url(image/parch.jpg);
 }
-/*le css pour les mobiles*/
-/*@media screen (min-width: 680px){
+#text {
+  width: 33%;
+  height: 20%;
+  text-align: center;
+  font-family: "Franklin Gothic Medium', cursive";
+}
+#epee {
+  width: 40%;
+  height: 50%;
+  max-width: 135px;
+  padding-bottom: 10%;
+}
+#image1 {
+  width: 33%;
+  height: 99%;
+margin-right: 5px;
+  border: 3px solid black;
+  box-shadow: 8px 12px 10px 8px rgba(54, 1, 1, 0.205);
 }
 header {
-    display: flex;
-    height: 50px;
-    background-color: #222; 
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-hr{
-    border: none;
-    width: 0%;
-}
-#container{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    height: 100px;
-    margin-top: 10px;
-}
-#image{
-    width: 165px;
-    height: 120px;
-    border: 1px solid black;
-    position: absolute;
+  display: flex;
 }
 
-body{
-    background: url(image/parch.jpg);
+hr {
+  border: 3px solid black;
+  width: 99%;
+}
+footer {
+  display: flex;
+}
+#text1 {
+  display: flex;
+  justify-items: flex-end;
+  height: 20px;
+  text-align: justify;
+  top: 60%;
+  font-family: "Franklin Gothic Medium', cursive";
+}
+#epee1 {
+  width: 40%;
+  height: 45%;
+  transform: rotate(90deg);
+  max-width: 135px;
+  padding-bottom: 10px;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+#lien-image2 {
+  width: 33%;
+  height: 99%;
+  border: 3px solid black;
+  box-shadow: 8px 12px 10px 8px rgba(54, 1, 1, 0.205);
+}
+#image2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px ;
+}
+.bottom-text {
+  padding: 0 15%;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    /*background-color: */
+    align-items: center;
+}
+footer > p {
+    color: rgb(133, 58, 58);
+    box-shadow: 5px 5px 5px 5px rgb(82, 12, 12);
+}
+#burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    background-color: #000;
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all .8s;
+}
+/*css pour que le burger s'anime après le click*/
+.open .line1 {
+    transform: rotateZ(-45deg) translate(-12px, 12px);
+}
+.open .line2 {
+    opacity: 0;
+}
+.open .line3 {
+    transform: rotateZ(45deg) translate(-12px, -12px);
+}
+/*menu caché au départ*/
+.dropdown-menu {
+    position: fixed;
+    top: -50%;
+    transition: 1s;
+    background-color: rgb(133, 58, 58);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+/*css pour que le menu apparaisse*/
+.open .dropdown-menu {
+    top: 10%;
+    position: fixed;
+}
+.dropdown-menu > ul {
+    list-style: none;
+}
+/*espace entre les éléments du menu*/
+.nav-item {
+    margin: 20px;
+}
+/*.navmenu{
+    display: none;
+}*/
+/*le css pour les mobiles*/
+@media screen and (max-width: 680px) {
+  header {
+    display: flex;
+    height: 10px;
+    width: 100%;
+  }
+  hr {
+    border: none;
+    width: 0%;
+  }
+  .navmenu{
+      
+      width:20px;
+      height: 100px;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    margin-top: 50px;
     
+  }
+  .wrap-epee-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
-#image1{
-    width: 270px;
-    height: 120px;
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.bottom-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+  .img {
+    height: 100%;
+    width: 100%;
+    
+  }
+  #text,
+  #image {
+    width: 100%;
     border: 1px solid black;
-}
-#image2{
-    width: 200px;
-    height: 120px;
-    margin-left: 15.5%;
-    padding-top: 1.5%;
+    
+  }
+
+  body {
+    
+    width: 100%;
+    background: url(image/parch.jpg);
+  }
+  #image1 {
+    width: 100%;
+    border: 1px solid black;
+    
+    
+  }
+
+  #epee,
+  #epee1 {
+    display: none !important;
+  }
 }
 /*le css des elements enlever*/
-/*#text{
-    display: none;  
-}
-#epee{
-    display: none;
-}
-#text1{
-    display: none;
-}
-#epee1{
-    display:none;
-    
-}
+/* @media screen and (max-width: 1300px) {
+ 
+} */

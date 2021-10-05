@@ -6,47 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel ="stylesheet" type="text/css" href ="page3.css">
-
-    <title>Document</title>
+<script src="page3.js" defer></script>
+    <title>Demo</title>
 </head>
  <body>       
  
   <header>      
-         <div id="Logo">
-             <img src="image/logo1.png" alt="image de logo" />
 
-         </div>
-         <nav>
-             <ul>
-                 <li><a href="#">Accueil</a></li>
-                 <li><a href="#">Blog</a></li>
-                 <li><a href="#">Contact</a></li>
+    
+    <nav class="navmenu">
+                <div id="burger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                <!--menu caché par défaut-->
+                <div class="dropdown-menu">
+                    <ul>
+                        <li class="nav-item">Accueil</li>
+                        <li class="nav-item">Outils</li>
+                        <li class="nav-item">Démo</li>
+                        <li class="nav-item">Ressources</li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
 
-             </ul>
-             
-         </nav>
-
-        </header> 
      <hr></hr>
       <div id="container">
-        <img id="image" src="image/feuille6.png" alt="photo d'une image html" />
-        <div id="text">Dierction le CSS</div>
+        <img class="img" id="image" src="image/feuille6.png" alt="photo d'une image html" />
+    <div class="wrap-epee-text">
+        <div id="text">Direction le CSS</div>
         <img id="epee" src="image/glaive.png" />
-        
         <img id="epee1" src="image/glaive.png" />
-        <img id="image1" src="image/site2.png" alt="image du site wild code school" />
-     </div>
+    </div>
+        <img class="img" id="image1" src="image/site2.png" alt="image du site wild code school" />
+      </div> 
 
 
-    
+    <div class="bottom-container">
         <div id="text1">En route pour le Js</div>
-        <a href="https://www.youtube.com/watch?v=lDO14MA0C_o" taget="_blanc">
-         <img id="image2" src="image/js.png" alt="image de javascript" title="je suis une infobulle" />
+        <a  id="lien-image2" href="https://www.youtube.com/watch?v=lDO14MA0C_o" taget="_blanc">
+         <img class="img" id="image2" src="image/js.png" alt="image de javascript" title="je suis une infobulle" />
          </a>
-        
-         
-    
-    
-    
+         <p class="bottom-text">Dans cette page apparait 3 images distingues.
+             Une page avec juste du HTML, qui se trouve sur votre gauche.
+             La seconde à doite, on peut y voir l'arrivée du CSS et l'image du centre
+             où on vous renvoit vers une petite vidéo explicicative du language Js.
+         </p>
+        </div>
+
+        <footer>
+            <p>Politique de confidentialité</p>
+            <p>FAQ</p>
+            <p>Mentions légales</p>
+        </footer>
     </body>
     
+</html>
+
