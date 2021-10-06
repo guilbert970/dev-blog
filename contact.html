@@ -10,9 +10,58 @@
 </head>
 <body>
     <header>
-        <h2>Recherche de groupe !</h2>
+        <img src="img/logoDA.png" alt="logo" class="logo">
+        
+        <nav class="navmenu">
+            <div id="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Démo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu caché en format mobile -->
+        <ul class="menu">
+                <li>
+                    <a href="accueil.html" class="actif">Accueil</a>
+            </li>
+            <li>
+                <a href="page2.html">Outils</a>
+                </li>
+                <li>
+                <a href="page3.html">Démo</a>
+            </li>
+            <li>
+                <a href="page4.html">Ressources</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <!-- fin du menu caché en format mobile -->
     </header>
+    <div class="block"></div><!--utilisée pour occuper l'espace du header-->
     <div class="main">
+        <h2>Recherche de groupe !</h2>
         <div class="wrap-text">
             <p>Après toutes ces épreuves, tu es décidé à poursuivre dans cette voie, tu as des questions? N'hésite pas à nous contacter !</p>
         </div>
@@ -64,9 +113,9 @@
         </div>
     </div>
     <footer>
-        <p>Politique de confidentialité</p>
-        <p>FAQ</p>
-        <p>Mentions légales</p>
+        <p class="pfoot1">Politique de confidentialité</p>
+        <p class="pfoot">FAQ</p>
+        <p class="pfoot">Mentions légales</p>
     </footer>
 </body>
 </html>
