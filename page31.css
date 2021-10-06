@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(image/parch.jpg);
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+}
+.html{
+    border:1px solid black;
+    box-shadow: 3px 3px 3px 3px black;
+    width: 250px;
+    height: 150px;
+    margin: 10vh 10vh 10vh 10vh;
+    
+}
+.text{
+    text-align: center;
+    width: 30vh;
+    height: 10vh;
+    padding-top: 60px;
+    margin-left: 10vh;
+    padding-left: -10vh;
+    
+    
+}
+.epee{
+width: 30vh;
+height: 30vh;
+margin-left: -20vh;
+margin-top: 10vh;
+margin-right: 20vh;
+
+}
+.css{
+    width: 250px;
+    height: 150px;
+    margin-right: 20px;
+    margin-left: -30px;
+    margin-top: 5vh;
+    border:1px solid black;
+    box-shadow: 3px 3px 3px 3px;
+    
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: justify;
+}
+h2{
+    background-color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ici début du css mobile*/
+@media screen and(min-width:680px){
+    .container{
+        flex-direction: column;
+    }
+}
