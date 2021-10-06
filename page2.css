@@ -24,10 +24,9 @@ header {
     display: none;
 }
 .owl {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto 20px auto;
-    
+    height: 75px;
+    width: 75px;
+    margin: 0 auto 20px auto; 
 }
 h2 {
     font-size: 20px;
@@ -105,7 +104,7 @@ p {
     background: url('img/Weapons.png') center;
 }
 .content2 {
-    background-image: url('img/Questlog.jpg');
+    background-image: url('img/Questlog.png');
     width: 400px;
     height: 400px;
     max-width: 100%;
@@ -134,6 +133,20 @@ p {
 }
 span {
     text-decoration: underline;
+}
+footer {
+    position: relative;
+    background-color: #222;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+footer > p {
+    font-size: 20px;
+    color: #f0ead3;
+    margin: 0 auto;
 }
 /*début CSS pour desktop*/
 @media screen and (min-width: 600px) {
