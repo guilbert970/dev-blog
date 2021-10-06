@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script type="text/javascript" src="contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/logoDA.png" alt="logo" class="logo">
+        
+        <nav class="navmenu">
+            <div id="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Démo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu caché en format mobile -->
+        <ul class="menu">
+                <li>
+                    <a href="accueil.html" class="actif">Accueil</a>
+            </li>
+            <li>
+                <a href="page2.html">Outils</a>
+                </li>
+                <li>
+                <a href="page3.html">Démo</a>
+            </li>
+            <li>
+                <a href="page4.html">Ressources</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!-- fin du menu caché en format mobile -->
+    </header>
+    <div class="block"></div><!--utilisée pour occuper l'espace du header-->
+    <div class="main">
+        <h2>Recherche de groupe !</h2>
+        <div class="wrap-text">
+            <p>Après toutes ces épreuves, tu es décidé à poursuivre dans cette voie, tu as des questions? N'hésite pas à nous contacter !</p>
+        </div>
+    
+        <form id="form">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Nom" required>
+            <label for="email">email :</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <label for="textarea">Message :</label>
+            <textarea name="textarea" id="textarea" placeholder="Message"></textarea>
+            
+            <input type="submit" id="submit" value="Envoyer !">
+            <div id="open-modal">
+                <div class="inner-modal">
+                    <div class="slider">
+                        <p>Merci beaucoup pour votre retour, nous espérons vous revoir bientôt sur devAttitude !!</p>
+                    </div>
+                    <button id="close" type="button">Fermer</button>
+                </div>
+            </div>
+        </form>
+        <div class="coworkers-container">
+            <h3>Membres du projet :</h3>
+            <div class="coworker">
+                <p>Tatiana</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Tatiana.jpg" alt="Collaborateur1">    
+            </div>
+            <div class="coworker">
+                <p>Xavier</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Xavier.jpg" alt="Collaborateur2">    
+            </div>
+            <div class="coworker">
+                <p>Greg</p>
+                <div class="network">
+                    <img class="icon" src="img/mail-icon.svg" alt="email">
+                    <img class="icon" src="img/linkedIn-icon.svg" alt="linked-in">
+                </div>
+                <img src="img/Greg.jpg" alt="Collaborateur3">    
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="pfoot1">Politique de confidentialité</p>
+        <p class="pfoot">FAQ</p>
+        <p class="pfoot">Mentions légales</p>
+    </footer>
+</body>
+</html>
