@@ -74,7 +74,7 @@ h1{
     }
     /*css pour que le menu apparaisse*/
     .open .dropdown-menu {
-        top: 10%;
+        top: 25%;
         position: fixed;
     }
     .dropdown-menu > ul {

@@ -6,21 +6,91 @@ body {
     background: url('img/woodtable.jpg');
 }
 header {
-    display: flex;
-    height: 50px;
-    background-color: #222; 
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+	position: fixed;
+	height: 75px;
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	z-index: 5;
 }
-.logo-pic  {
-    height: 50px;
-    width: 50px;
-    left: 10px;
-    position: absolute;
+.logo {
+	height: 40px;
+	width: 40px;
+	margin: 0 15px;
 }
-/*ici les éléments masqués en format mobile*/
-.banner, .pic-desk-only {
+/*menu caché en format mobile*/
+.menu {
+	display: none;
+}
+.navmenu {
+	width: 100%;
+}
+#burger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 40px;
+	height: 30px;
+	background-color: #000;
+	cursor: pointer;
+}
+.line {
+	width: 100%;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 2px;
+	transition: all .8s;
+}
+/*css pour que le burger s'anime après le click*/
+.open .line1 {
+	transform: rotateZ(-45deg) translate(-10px, 6px);
+}
+.open .line2 {
+	opacity: 0;
+}
+.open .line3 {
+	transform: rotateZ(45deg) translate(-10px, -6px);
+}
+/*menu caché au départ*/
+.dropdown-menu {
+	position: fixed;
+	top: -80%;
+	left: 0;
+	transition: 1s;
+	background-color: rgba(148, 31, 1, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	border-radius: 10px;
+}
+/*css pour que le menu apparaisse*/
+.open .dropdown-menu {
+	top: 11%;
+	position: fixed;
+}
+.dropdown-menu > ul {
+	list-style: none;
+}
+/*espace entre les éléments du menu*/
+.nav-item {
+	margin: 30px;
+    font-family: 'Franklin Gothic Medium', cursive;
+    font-size: 30px;
+}
+.nav-link {
+	text-decoration: none;
+	color: #fff;
+}
+.block {
+	height: 75px;
+	width: 100%;
+	background-color: #000;
+}
+
+.pic-desk-only {  /*ici les éléments masqués en format mobile*/
     display: none;
 }
 .owl {
@@ -39,7 +109,8 @@ h3, .visible, .visible > a {
     color: #f0ead3;
 }
 .visible {
-    font-size: 18px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', cursive;
 }
 .wrapper { 
     display: flex;
@@ -70,11 +141,11 @@ h3, .visible, .visible > a {
     visibility: visible;
 }
 p {
-    font-size: 12px;
+    font-size: 18px;
     margin: 10px;
     padding: 5px;
     background-size: cover;
-    margin:20px auto;
+    margin: 20px auto;
 }
 /*fin des classes cacher/révéler */
 .button, .close {
@@ -135,18 +206,25 @@ span {
     text-decoration: underline;
 }
 footer {
-    position: relative;
-    background-color: #222;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	justify-content: center;
+	position: relative;
+	height: auto;
+	width: 100%;
+	background-color: #555;
+	align-items: center;
+}
+.pfoot1 {
+	grid-row-start: 1;
+	grid-column: span 2;
 }
 footer > p {
-    font-size: 20px;
-    color: #f0ead3;
-    margin: 0 auto;
+	color: #fff;
+	padding: 30px;
+	letter-spacing: 0.3em;
+	text-align: center;
 }
 /*début CSS pour desktop*/
 @media screen and (min-width: 600px) {
@@ -154,19 +232,55 @@ footer > p {
         height: 100px;
         background-color: #111;
     }  
-    .logo-pic {
-        width: 100px;
+    header {
+		height: 100px;
+	}
+	.logo {
+		height: 100px;
+		width: 100px;
+		margin: 10px;
+	}
+	.navmenu {
+		display: none;
+	}
+    .block {
         height: 100px;
-        margin: 0 20px;
     }
-    h2 {
-        display: none;
-    }
-    .banner {
-        display: block;
-        width: 400px;
-        max-height: 100%;
-    }
+	/*menu visible en format desktop*/
+	/* css Tatiana*/
+	.menu {
+		width: 100%;
+		display: flex; /* Transformation en flexbox */
+		padding: 0; /* Suppression des marges internes */
+		justify-content: space-around; /* Alignements des liens dans le menu */
+	}
+	ul {
+		list-style: none;
+		display: inline;
+		font-family: 'Franklin Gothic Medium', cursive;
+		text-align: center;
+		font-size: 25px;
+		justify-content: center;
+		margin: 0px;
+		padding: 10px;
+		width: 100%;
+	}
+	li {
+		display: inline;
+	}
+	.menu a {
+		display: block;
+		min-width: 120px;
+		padding: 0.4rem 0;
+		text-align: center;
+		background-color: #941f01;
+		margin: 0.5rem;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: all 1s;
+		border: 1px solid #fff;
+	}
     .owl {
         width: 100px;
         height:100px;

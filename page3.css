@@ -220,10 +220,10 @@ width: 100%;
   }
 .dropdown-menu {
   position: fixed;
-  top: -50%;
+  top: -80%;
   left: 0;
   transition: 1s;
-  background-color: rgba(2,2,2,.9);
+  background-color: rgba(148, 31, 1, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,6 +241,8 @@ width: 100%;
 }
   .nav-item{
     margin: 30px;
+    font-family: 'Franklin Gothic Medium', cursive;
+    font-size: 30px;
   }
   .nav-link{
     text-decoration: none;

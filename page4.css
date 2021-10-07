@@ -78,6 +78,8 @@ header {
 /*espace entre les éléments du menu*/
 .nav-item {
 	margin: 30px;
+	font-family: 'Franklin Gothic Medium', cursive;
+    font-size: 30px;
 }
 .nav-link {
 	text-decoration: none;
@@ -113,9 +115,7 @@ h2 {
 	height: 100%;
 	width: 100%;
 }
-.grid:nth-child(odd) {
-	margin-top: 10px;
-}
+
 a {
 	color: rgb(88, 222, 255);
 	margin: auto;
@@ -136,6 +136,8 @@ a {
 	text-align: center;
 	margin: 30px;
 	padding: 10px;
+	font-family: 'Franklin Gothic Medium', cursive;
+	font-size: 22px;
 }
 footer {
 	display: grid;
