@@ -56,7 +56,7 @@ header {
 /*menu caché au départ*/
 .dropdown-menu {
 	position: fixed;
-	top: -50%;
+	top: -80%;
 	left: 0;
 	transition: 1s;
 	background-color: rgba(148, 31, 1, 0.9);
