@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+
+    color:darkred;
+    font-family:'URW Chancery L', cursive;
+    line-height: 1,8px;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+    border-top: rgb(100, 2, 2);
+    background-image: url('https://static9.depositphotos.com/1514637/1230/i/600/depositphotos_12304227-stock-photo-grunge-parchment.jpg');
+    margin: 0px;
+    padding: 40px 0;
+    text-shadow:saddlebrown 4px 4px 5px;}
+    .navmenu{
+        display:none;
+    }
+    #welcome {
+        display: flex;
+        height: 100px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+        padding:10px;
+        background:url('https://static9.depositphotos.com/1514637/1230/i/600/depositphotos_12304227-stock-photo-grunge-parchment.jpg');
+    }
+    #burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        padding:10px;
+    }
+    
+    
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all .8s;
+    }
+    /*css pour que le burger s'anime après le click*/
+    .open .line1 {
+        transform: rotateZ(-45deg) translate(-10px, 6px);
+    }
+    .open .line2 {
+        opacity: 0;
+    }
+    .open .line3 {
+        transform: rotateZ(45deg) translate(-10px, -6px);
+    }
+    /*menu caché au départ*/
+    .dropdown-menu {
+        position: fixed;
+        top: -50%;
+        left: 0;
+        transition: 1s;
+        background-color: rgba(2,2,2,.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        border-radius: 10px;
+    }
+    /*css pour que le menu apparaisse*/
+    .open .dropdown-menu {
+        top: 10%;
+        position: fixed;
+    }
+    .dropdown-menu > ul {
+        list-style: none;}
+    /*espace entre les éléments du menu*/
+    .nav-item {
+        margin: 20px;
+    }
+
+    .menu {
+        width:100%;
+        display: flex;                /* Transformation en flexbox */
+        padding:0;                    /* Suppression des marges internes */
+        background-color:rgb(165, 2, 2);       /* Ajout de la couleur d'arrière-plan */
+        justify-content: space-around;
+        height:100px;/* Alignements des liens dans le menu */
+    }
+    .boxmenu{
+        width:100%;
+    }
+    ul {
+        list-style: none ;
+        display: inline;
+        background-image: url('https://static9.depositphotos.com/1514637/1230/i/600/depositphotos_12304227-stock-photo-grunge-parchment.jpg');
+        font-family: 'Franklin Gothic Medium',cursive;
+        text-align:center;
+        font-size: 25px; 
+        color:rgb(167, 3, 36); 
+        justify-content: center;
+        margin:0px;
+        padding: 10px;
+        width: 100%;
+        /* Suppression des puces */
+    }
+    li {
+        display: inline;
+    }
+    .menu a {
+        display:block;                /* Transformation en block */
+        min-width: 120px;             /* Largeur minimale des liens */   
+        
+        margin: 0.5rem;               /* Marges externes */
+        padding: 0.4rem 0;            /* Marges internes */
+        text-align: center;           /* Centrage du texte */   
+        background-color: #941f01;    /* A:rrière-plan */
+        color: #fff;                  /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+        border: 1px solid #fff;       /* Ajout d'une bordure */
+        border-radius: 4px;           /* Arrondis des bordures */
+        
+        transition: all 1s ;          /* Ajout des effets de transition */
+    }
+    .menu a.actif {    
+        background-color: #000 ; 
+        color: #1ABC9C ;
+        border-color: #1ABC9C ;
+    }
+    .menu a:hover,
+    .menu a:hover.actif{
+        background-color: #ed2794;
+        color: #ffe843;
+        border-color: #ffe843;
+    }
+
+
+
+
+
+    body{
+       background-size: cover;
+        background-image: url(https://c.pxhere.com/photos/41/78/old_door_arc_beauty_medieval_old_portal-1057511.jpg!d);
+        margin:0%;
+        padding:0%;
+        
+    }
+
+a{
+    cursor: url('Plume curseur.jpg')default;
+}
+    
+
+h2{
+    text-align:center;
+    max-width: 90vw;
+    margin: 0 auto;
+    background-color: teal;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    justify-content:space-around;
+}
+p{
+    text-align: center;
+    line-height: 1,5px;
+    color:rgb(56, 4, 4);
+    font-family: 'Franklin Gothic Medium', cursive;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: white 4px 4px 5px;
+    
+
+}
+img.displayed {
+    display: block;
+    margin-left:auto;
+    margin-right:auto
+}
+.flex-container {
+    flex-direction:column;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.fun div{
+    
+    display:flex;
+    align-items: center;
+    min-height: 300px;
+    background: url('https://i.pinimg.com/474x/64/5b/7f/645b7f501540bac003af66f9f27088f7--antique-keys-vintage-keys.jpg')no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', cursive;
+    color:rgb(3, 3, 3);
+    font-size:  30px;
+    text-shadow:rgb(250, 250, 250) 4px 4px 5px;
+    border-radius:20px;
+    
+
+}
+.question div{
+    
+    display:flex;
+    align-items:center;
+    height: 300px;
+    background: url('https://i.pinimg.com/originals/20/93/88/209388b1b5b19fc985c542ce04c6d338.jpg') no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', cursive;
+    color:rgb(116, 2, 2);
+    font-size: 30px;
+    text-align: center;
+    border:rgb(33, 2, 90) 10px;
+    text-shadow:rgb(19, 13, 13) 4px 4px 5px;
+    border-radius: 20px;
+
+}
+.keys div{
+    
+    display:flex;
+    align-items:center;
+    height:300px;
+    background: url('https://eldorado-immobilier.com/wp-content/uploads/2019/09/success-1433400_640-450x300.jpg')no-repeat;
+    justify-content: space-around;
+    background-size: cover;
+
+    /* width: 300px*/
+    font-family:'Franklin Gothic Medium', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    text-align:center;
+    text-shadow:rgb(251, 252, 255) 4px 4px 5px;
+    border:rgb(2, 1, 48) 10px;
+    border-radius:20px;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #555;
+    align-items: center;
+}
+footer > p {
+    color: #fff;
+}
+@media screen and (max-width:600px){
+    .menu{display:none !important;
+    } 
+    .navmenu{
+        display:block;
+        background:url('https://static9.depositphotos.com/1514637/1230/i/600/depositphotos_12304227-stock-photo-grunge-parchment.jpg');
+    }
+}
