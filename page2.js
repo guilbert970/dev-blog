@@ -1,3 +1,9 @@
+const burger = document.getElementById('burger');
+const navMenu = document.querySelector('.navmenu');
+//Evènement pour faire apparaitre le menu
+burger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});
 function show(x) {
     document.querySelector('.hide' + x).classList.add('show');
     document.querySelector('.button' + x).style.opacity = '0';

@@ -9,11 +9,56 @@
 </head>
 <body>
     <header>
-        <img class="logo-pic" src="img/logo.png" alt="logo">
-        <h2>New Challenger !</h2>
-        <img class="banner" src="img/banner.png" alt="challenger">
+        <img src="img/logoDA.png" alt="logo" class="logo">
+        
+        <nav class="navmenu">
+            <div id="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Démo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu caché en format mobile -->
+        <ul class="menu">
+                <li>
+                    <a href="accueil.html" class="actif">Accueil</a>
+            </li>
+            <li>
+                <a href="page2.html">Outils</a>
+                </li>
+                <li>
+                <a href="page3.html">Démo</a>
+            </li>
+            <li>
+                <a href="page4.html">Ressources</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!-- fin du menu caché en format mobile -->
     </header>
-
+    <div class="block"></div>
     <div class="wrapper">
         <p class="visible">Maintenant que tu as passé la porte, il est temps de commencer ! Suis ce  <a target="_blank" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3">tutoriel</a> pour apprendre les bases, ensuite ...</p>
         <img class="owl" src="img/owl.png" alt="owl">
@@ -80,7 +125,7 @@
             </div>
     </div>
     <footer>
-        <p>Politique de confidentialité</p>
+        <p class="pfoot1">Politique de confidentialité</p>
         <p>FAQ</p>
         <p>Mentions légales</p>
     </footer>
