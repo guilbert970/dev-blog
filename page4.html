@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <title>Dev-Attitude</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,47 +10,106 @@
     <title>Divers ressources</title>
 </head>
  <body>
-     <audio controls="controls" loop="loop" autoplay="autoplay"> 
-         <source src="star-wars.mp3" type="audio/mpeg">
-         <source src="star-wars.mp3" type="audio/wav">
-         <source src="star-wars.mp3" type="audio/ogg; codecs=vorbis">
-         
+    <header>
+        <img src="img/logoDA.png" alt="logo" class="logo">
+        
+        <nav class="navmenu">
+            <div id="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Démo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu caché en format mobile -->
+        <ul class="menu">
+                <li>
+                    <a href="accueil.html" class="actif">Accueil</a>
+            </li>
+            <li>
+                <a href="page2.html">Outils</a>
+                </li>
+                <li>
+                <a href="page3.html">Démo</a>
+            </li>
+            <li>
+                <a href="page4.html">Ressources</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!-- fin du menu caché en format mobile -->
+    </header>
+    <div class="block"></div>
+     <audio controls="controls" autoplay> 
+         <source src="assets/StarWars.mp3">   
      </audio>
-     <table>
-         <tr>
-         <p>Un tableu vous fournissant quelques ressources pour vous aider dans votre quête de devellopeur.</p>
-
-
-         <th>SITE</th>
-         <th>LIEN</th>
-         <th>JEUX</th>
-         </tr>
-         <tr> 
-
-         <td>OpencLassRoom</td> 
-         <td>https://www.kicklox.com/blog-talent/devenir-developpeur-2019</td>
-         <td>    CheckIO         </td>
-         </tr>
-         <tr> 
-
-         <td>  Mozilla Developer Network        </td>
-         <td>  https://www.youtube.com/channel/UC7AVPVO21rPjgC8W9dPYEvw</td> 
-         <td>Pixel pour les plus jeunes</td>  
-         </tr>
-         <tr> 
-
-         <td>   Udemy         </td>  
-         <td>https://www.youtube.com/channel/UC9RqnWGripL5L3lxH-fEZjg</td>
-         <td>  CodeCombat, la programmation pour tous          </td>
-         </tr>
-         <tr> 
-
-         <td>https://grafikart.fr/</td>
-         <td>https://www.youtube.com/channel/UCsFoQ4A9CZbF3qag317uZZQ</td>
-         <td>Codingame.com, le défi communautaire</td>
-         </tr>
-     </table>
      
+         <h2>Ici un tableau vous fournissant quelques ressources pour vous aider dans votre quête de developpeur.</h2>
+<div class="grid">
+    <div class="grid-item">
+        <p>Divers sites utiles</p>
+    </div>
+    <div class="grid-item">
+        <p>Liens :</p>
+               <a target="_blank" href="https://www.google.com/search?q=colorpicker&sxsrf=AOaemvK3nxTqFSLR_js54wqkvAujGz28KQ%3A1633605141982&source=hp&ei=FdZeYeP2OPqy5NoPoJasqAo&iflsig=ALs-wAMAAAAAYV7kJZ-czoCWiHE4RMRfJ78JL-KFDD0M&oq=colorpicker&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCxAxCDATIICAAQgAQQsQMyDgguEIAEELEDEMcBEK8BMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMggILhCABBCxAzoRCC4QgAQQsQMQgwEQxwEQowI6EQguEIAEELEDEIMBEMcBENEDOgsIABCABBCxAxCDAToOCC4QgAQQsQMQxwEQowI6BQgAEIAEOg4ILhCABBCxAxDHARDRA1DeA1idCWCsJmgAcAB4AYABrQOIAdUIkgEJMi4wLjIuMC4xmAEAoAEB&sclient=gws-wiz">éditeur de couleurs</a>
+               <a target="_blank" href="https://iconmonstr.com/">Bibliothèque d'icônes</a>
+               <a target="_blank" href="https://pixabay.com/fr/images/search/learn/">Bibliothèque d'images libres de droit</a>
+               <a target="_blank" href="https://resizeimage.net/">Redimensionneur d'images</a>
+    </div>
+    <div class="grid-item">
+        <p>Introduction aux langages du "back-end". ( Programmation liée aux bases de données )</p>
+    </div>
+    <div class="grid-item">
+        <p>Liens :</p> 
+            <a href="https://blog.back4app.com/fr/les-10-principaux-langages-de-programmation-backend/">Les 10 principaux</a>
+    </div>
+    <div class="grid-item">
+        <p>Liste de sites ludiques</p>
+    </div>
+    <div class="grid-item">
+        <p>Liens :</p> 
+        <a target="_blank" href="https://alexnisnevich.github.io/untrusted/">Untrusted</a>
+        <a target="_blank" href="https://play.elevatorsaga.com/">Elevator saga</a>
+        <a target="_blank" href="https://checkio.org/">Checkio</a>
+    </div>
+    <div class="grid-item">
+        <p>YouTubers à suivre</p>
+    </div>
+    <div class="grid-item">
+        <p>Liens :</p>
+        <a target="_blank" href="https://www.youtube.com/c/grafikart">Grafikart</a>
+        <a target="_blank" href="https://www.youtube.com/c/Fireship">Fireship</a>
+        <a target="_blank" href="https://www.youtube.com/kepowob">Kevin Powell</a>
+    </div>
+</div>
+    <p class="outro">(Cette liste est non-exhaustive)</p>
+     <footer>
+        <p class="pfoot1">Politique de confidentialité</p>
+        <p class="pfoot">FAQ</p>
+        <p class="pfoot">Mentions légales</p>
+    </footer>
 
-     <script src="src/page4.js"></script>
-      </body>
+     <script type="text/javascript" src="page4.js"></script>   
+</body>
+</html>
